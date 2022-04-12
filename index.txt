@@ -1,0 +1,21 @@
+SELECT * FROM users;
+INSERT INTO users (first_name, last_name, email) 
+VALUES ('Daniel', 'Castaneda', 'daniel02castaneda@gmail.com');
+INSERT INTO users (first_name, last_name, email) 
+VALUES ('Kobe', 'Byrant', 'KobeByrant@gmail.com');
+INSERT INTO users (first_name, last_name, email) 
+VALUES ('tiffany ', 'Hudson', 'TiffHudson@gmail.com');
+
+SELECT * FROM users
+WHERE email = 'daniel02castaneda@gmail.com';
+
+UPDATE users SET last_name = 'Pancakes'
+WHERE users.id  = 3;
+
+DELETE FROM users 
+WHERE users.id = 2;
+
+SELECT first_name FROM users;
+
+SELECT * FROM users
+ORDER BY first_name DESC;
